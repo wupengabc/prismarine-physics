@@ -1,6 +1,8 @@
 # prismarine-physics
 
-[![NPM version](https://img.shields.io/npm/v/prismarine-physics.svg)](http://npmjs.com/package/prismarine-physics)
+> **Fork (wupengabc):** adds **Minecraft 26.3 (protocol 777)** support. Published to npm as [`@wp2508/prismarine-physics`](https://www.npmjs.com/package/@wp2508/prismarine-physics) — install with `npm install @wp2508/prismarine-physics` and `require('@wp2508/prismarine-physics')`. Upstream: [PrismarineJS/prismarine-physics](https://github.com/PrismarineJS/prismarine-physics).
+
+[![NPM version](https://img.shields.io/npm/v/@wp2508/prismarine-physics.svg?color=success&label=npm%20package&logo=npm)](https://www.npmjs.com/package/@wp2508/prismarine-physics)
 [![Build Status](https://github.com/PrismarineJS/prismarine-physics/workflows/CI/badge.svg)](https://github.com/PrismarineJS/prismarine-physics/actions?query=workflow%3A%22CI%22)
 [![Discord](https://img.shields.io/badge/chat-on%20discord-brightgreen.svg)](https://discord.gg/GsEFRM8)
 [![Gitter](https://img.shields.io/badge/chat-on%20gitter-brightgreen.svg)](https://gitter.im/PrismarineJS/general)
@@ -13,10 +15,10 @@ Provide the physics engine for minecraft entities
 ## Usage
 
 ```js
-const { Physics, PlayerState } = require('prismarine-physics')
+const { Physics, PlayerState } = require('@wp2508/prismarine-physics')
 const { Vec3 } = require('vec3')
 
-const mcData = require('minecraft-data')('1.13.2')
+const mcData = require('@wp2508/minecraft-data')('1.13.2')
 const Block = require('prismarine-block')('1.13.2')
 
 const physics = Physics(mcData, world)
